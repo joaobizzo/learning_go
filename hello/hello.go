@@ -6,12 +6,8 @@ import (
 
 func main() {
 	exibeIntroducao()
-
-	fmt.Println("1 - Iniciar monitoramento")
-	fmt.Println("2 - Exibir logs")
-	fmt.Println("0 - Sair do programa")
-	var comando int
-	comando = leComando()
+	exibeMenu()
+	comando := leComando()
 
 	// if comando == 1 {
 	// 	fmt.Println("Monitorando...")
@@ -41,6 +37,12 @@ func exibeIntroducao() {
 	versao := 1.21
 	fmt.Println("Olá, senhor ", nome)
 	fmt.Println("Este programa está na versão:", versao)
+}
+
+func exibeMenu() {
+	fmt.Println("1 - Iniciar monitoramento")
+	fmt.Println("2 - Exibir logs")
+	fmt.Println("0 - Sair do programa")
 }
 
 func leComando() int {
