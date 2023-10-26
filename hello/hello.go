@@ -5,10 +5,6 @@ import (
 )
 
 func main() {
-	nome := "João"
-	versao := 1.21
-	fmt.Println("Olá, senhor ", nome)
-	fmt.Println("Este programa está na versão:", versao)
 
 	fmt.Println("1 - Iniciar monitoramento")
 	fmt.Println("2 - Exibir logs")
@@ -40,4 +36,11 @@ func main() {
 	default:
 		fmt.Println("Não conheço esse comando")
 	}
+}
+
+func exibeIntroducao() {
+	nome := "João"
+	versao := 1.21
+	fmt.Println("Olá, senhor ", nome)
+	fmt.Println("Este programa está na versão:", versao)
 }
