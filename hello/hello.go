@@ -7,23 +7,9 @@ import (
 )
 
 func main() {
-	_, idade := devolveNomeEIdade()
-	fmt.Println("Idade = ", idade)
-
 	exibeIntroducao()
 	exibeMenu()
 	comando := leComando()
-
-	// if comando == 1 {
-	// 	fmt.Println("Monitorando...")
-
-	// } else if comando == 2 {
-	// 	fmt.Println("Exibindo logs...")
-	// } else if comando == 0 {
-	// 	fmt.Println("Saindo do programa")
-	// } else {
-	// 	fmt.Println("Não conheço esse comando")
-	// }
 
 	switch comando {
 	case 1:
@@ -38,12 +24,6 @@ func main() {
 		fmt.Println("Não conheço esse comando")
 		os.Exit(-1)
 	}
-}
-
-func devolveNomeEIdade() (string, int) {
-	nome := "João"
-	idade := 20
-	return nome, idade
 }
 
 func exibeIntroducao() {
