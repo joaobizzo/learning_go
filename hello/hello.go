@@ -7,11 +7,12 @@ import (
 )
 
 func main() {
+	_, idade := devolveNomeEIdade()
+	fmt.Println("Idade = ", idade)
+
 	exibeIntroducao()
 	exibeMenu()
 	comando := leComando()
-	nome, idade := devolveNomeEIdade()
-	fmt.Println("Nome = ", nome, "- Idade = ", idade)
 
 	// if comando == 1 {
 	// 	fmt.Println("Monitorando...")
@@ -70,8 +71,7 @@ func leComando() int {
 func iniciarMonitoramento() {
 	fmt.Println("Monitorando...")
 	site := ("https://www.alura.com.br")
-	resp, error := http.Get(site)
+	resp, _ := http.Get(site)
 	fmt.Println(resp)
-	fmt.Println(error)
 
 }
