@@ -10,6 +10,8 @@ func main() {
 	exibeIntroducao()
 	exibeMenu()
 	comando := leComando()
+	nome, idade := devolveNomeEIdade()
+	fmt.Println("Nome = ", nome, "- Idade = ", idade)
 
 	// if comando == 1 {
 	// 	fmt.Println("Monitorando...")
@@ -35,6 +37,12 @@ func main() {
 		fmt.Println("Não conheço esse comando")
 		os.Exit(-1)
 	}
+}
+
+func devolveNomeEIdade() (string, int) {
+	nome := "João"
+	idade := 20
+	return nome, idade
 }
 
 func exibeIntroducao() {
