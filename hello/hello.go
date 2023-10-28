@@ -55,10 +55,3 @@ func iniciarMonitoramento() {
 	fmt.Println(resp)
 
 }
-
-func devolveNomeEIdade2() (nome string, ano int) {
-	nome = "João"
-	fmt.Scanln(&ano)
-	ano = 2023 - ano
-	return nome, ano
-}
