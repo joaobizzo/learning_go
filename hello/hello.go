@@ -55,8 +55,3 @@ func iniciarMonitoramento() {
 	fmt.Println(resp)
 
 }
-
-func exibeNomes() {
-	nomes := []string{"João", "Davi", "Lucas"}
-	fmt.Println(nomes)
-}
