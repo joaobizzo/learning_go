@@ -55,3 +55,9 @@ func iniciarMonitoramento() {
 	fmt.Println(resp)
 
 }
+
+func devolveNomeEIdade() (string, int) {
+	nome := "João"
+	idade := 10
+	return nome, idade
+}
